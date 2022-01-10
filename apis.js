@@ -24,28 +24,28 @@ var key = 'akameapikey' //apikey das apis
 resposta = { //MSG DE ERRO NO SERVIDOR
     semkey: {
         status: false,
-        criador: criador,
+        criador: `${criador}`,
         código: 406,
         mensagem: 
         'Insira a apikey na url'
     },
     cdtxt: {
         status: false,
-        criador: criador,
+        criador: `${criador}`,
         código: 406,
         mensagem: 
         'insira o texto na url'
     },
     cdimg: {
         status: false,
-        criador: criador,
+        criador: `${criador}`,
         código: 406,
         mensagem: 
         'Insira a imagem na url'
     },
     error: {
        status: false,
-        criador: criador,
+        criador: `${criador}`,
         mensagem: 
         'ops :/ deu erro no servidor interno'
     }
@@ -141,7 +141,7 @@ if(!cdapikey) return res.json(resposta.semkey)
 res.json({
 status: true,
 código: 200,
-criador: criador,
+criador: `${criador}`,
 resultado: akk
 })}).catch(e => {
 res.sendFile(error)})})
@@ -156,7 +156,7 @@ if(!cdapikey) return res.json(resposta.semkey)
 res.json({
 status: true,
 código: 200,
-criador: criador,
+criador: `${criador}`,
 resultado: akk
 })}).catch(e => {
 res.sendFile(error)})})
@@ -171,7 +171,7 @@ if(!cdapikey) return res.json(resposta.semkey)
 res.json({
 status: true,
 código: 200,
-criador: criador,
+criador: `${criador}`,
 resultado: akk
 })}).catch(e => {
 res.sendFile(error)})})
@@ -186,7 +186,7 @@ if(!cdapikey) return res.json(resposta.semkey)
 res.json({
 status: true,
 código: 200,
-criador: criador,
+criador: `${criador}`,
 resultado: akk
 })}).catch(e => {
 res.sendFile(error)})})
