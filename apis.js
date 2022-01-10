@@ -83,8 +83,11 @@ function getRandom(nans) {
    }
    })
   router.get('/canvas/*', async (req, res) => {
+  var cdapikey = req.query.apikey;
    let { url, texto } = req.query
    try {
+   if(!cdapikey) return res.json(resposta.semkey)
+  	if(cdapikey !== key) return res.sendFile(keyinvalida)
   switch(req.path.replace(/\/canvas/, '').toLowerCase()) {
  case '/trigger':
  case '/trigger/':
@@ -118,7 +121,10 @@ function getRandom(nans) {
  }
  })
  router.get('/nsfw/hentai', async (req, res) => {
+ var cdapikey = req.query.apikey;
  try {
+if(!cdapikey) return res.json(resposta.semkey)
+ if(cdapikey !== key) return res.sendFile(keyinvalida)
  end = getRandom([,"waifu", "neko"])
  let { url } = await getJson(`https://api.waifu.pics/nsfw/${end}`)
  let buffer = await getBuffer(url)
@@ -130,7 +136,10 @@ function getRandom(nans) {
  }
  })
  router.all('/shota', async (req, res) => {
+ var cdapikey = req.query.apikey;
    try {
+   if(!cdapikey) return res.json(resposta.semkey)
+  	if(cdapikey !== key) return res.sendFile(keyinvalida)
    json = JSON.parse(fs.readFileSync('lib/shotas.json').toString())
    random = json[Math.floor(Math.random() * json.length)]
    res.type('png')
@@ -143,7 +152,10 @@ router.post('/post/body', async (req, res) => {
   res.send(req.body)
 })
    router.all('/nsfwloli', async (req, res) => {
+   var cdapikey = req.query.apikey;
    try {
+   if(!cdapikey) return res.json(resposta.semkey)
+  	if(cdapikey !== key) return res.sendFile(keyinvalida)
    json = JSON.parse(fs.readFileSync('lib/nsfwlolis.json').toString())
    random = json[Math.floor(Math.random() * json.length)]
    res.type('png')
