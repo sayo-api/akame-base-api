@@ -28,7 +28,9 @@
     "node-fetch": "^2.6.1",
     "morgan": "^1.10.0",
     "ssl-express-www": "^3.0.7",
-    "canvacord": "^5.1.0"
+    "canvacord": "^5.1.0",
+    "ytdl-core": "^4.4.5",
+    "yt-search": "^2.7.3"
   },
   "homepage": "https://github.com/brenomakerr/akame-base-api"
 }
