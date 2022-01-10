@@ -142,7 +142,8 @@ res.json({
 status: true,
 código: 200,
 criador: criador,
-akk})}).catch(e => {
+resultado: akk
+})}).catch(e => {
 res.sendFile(error)})})
 
  router.get('/download/ytmp4', async(req, res, next) => {
@@ -166,6 +167,20 @@ if(!cdapikey) return res.json(resposta.semkey)
  if(cdapikey !== key) return res.sendFile(keyinvalida)
  if (!nome) return res.json({ status : false, criador : `criador`, mensagem : "Coloque o nome"})
  ytPlayMp3(nome).then((akk) => {
+res.json({
+status: true,
+código: 200,
+criador: criador,
+akk})}).catch(e => {
+res.sendFile(error)})})
+
+ router.get('/download/playv', async(req, res, next) => {
+ var cdapikey = req.query.apikey;
+ nome = req.query.nome
+if(!cdapikey) return res.json(resposta.semkey)
+ if(cdapikey !== key) return res.sendFile(keyinvalida)
+ if (!nome) return res.json({ status : false, criador : `criador`, mensagem : "Coloque o nome"})
+ ytPlayMp4(nome).then((akk) => {
 res.json({
 status: true,
 código: 200,

@@ -142,7 +142,8 @@ res.json({
 status: true,
 código: 200,
 criador: criador,
-akk})}).catch(e => {
+resultado: akk
+})}).catch(e => {
 res.sendFile(error)})})
 
  router.get('/download/ytmp4', async(req, res, next) => {
@@ -156,7 +157,8 @@ res.json({
 status: true,
 código: 200,
 criador: criador,
-akk})}).catch(e => {
+resultado: akk
+})}).catch(e => {
 res.sendFile(error)})})
 
  router.get('/download/play', async(req, res, next) => {
@@ -170,7 +172,8 @@ res.json({
 status: true,
 código: 200,
 criador: criador,
-akk})}).catch(e => {
+resultado: akk
+})}).catch(e => {
 res.sendFile(error)})})
 
  router.get('/download/playv', async(req, res, next) => {
@@ -184,7 +187,8 @@ res.json({
 status: true,
 código: 200,
 criador: criador,
-akk})}).catch(e => {
+resultado: akk
+})}).catch(e => {
 res.sendFile(error)})})
 
  router.all('/shota', async (req, res) => {
