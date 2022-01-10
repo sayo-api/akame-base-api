@@ -11,6 +11,7 @@ var fetch = require('node-fetch')
 var canvacord = require('canvacord').Canvas
 var fs = require('fs')
 
+var criador = ['@Breno']; // Nome do criador
 var key = 'akameapikey' //apikey das apis
 
 resposta = { //MSG DE ERRO NO SERVIDOR
