@@ -75,7 +75,7 @@ function getRandom(nans) {
    res.type('png')
    res.send(await getBuffer(random))
    } catch (e) {
-   res.send({ resposta.error })
+   res.send(resposta.error)
    }
    })
   router.get('/canvas/*', async (req, res) => {
@@ -87,19 +87,19 @@ function getRandom(nans) {
   switch(req.path.replace(/\/canvas/, '').toLowerCase()) {
  case '/trigger':
  case '/trigger/':
-  if (!url) return res.status(408).send({ resposta.cdimg })
+  if (!url) return res.status(408).send(resposta.cdimg)
   res.type('gif')
   res.send(await canvacord.trigger(url))
  break
  case '/changemymind':
  case '/changemymind/':
-  if (!texto) return res.status(408).send({ resposta.cdimg })
+  if (!texto) return res.status(408).send(resposta.cdimg)
   res.type('jpg')
   res.send(await canvacord.changemymind(texto))
   break
  case '/clyde':
  case '/clyde/':
-  if (!texto) return res.status(408).send({ resposta.cdimg })
+  if (!texto) return res.status(408).send(resposta.cdimg)
   res.type('jpg')
   res.send(await canvacord.clyde(texto))
   break
@@ -113,7 +113,7 @@ function getRandom(nans) {
   } catch (e) {
   console.error(e) 
    res.type('text/json')
-   res.status(400).send({ resposta.error })
+   res.status(400).send(resposta.error)
  }
  })
  router.get('/nsfw/hentai', async (req, res) => {
@@ -128,7 +128,7 @@ if(!cdapikey) return res.json(resposta.semkey)
  res.send(buffer)
  } catch {
  res.type('text/json')
- res.status(400).send({ resposta.error })
+ res.status(400).send(resposta.error)
  }
  })
  router.get('/download/ytmp3', async(req, res, next) => {
@@ -155,7 +155,7 @@ res.sendFile(error)})})
    res.type('png')
    res.send(await getBuffer(random))
    } catch (e) {
-   res.send({ resposta.error })
+   res.send(resposta.error)
    }
    })
 router.post('/post/body', async (req, res) => {
@@ -171,7 +171,7 @@ router.post('/post/body', async (req, res) => {
    res.type('png')
    res.send(await getBuffer(random))
    } catch (e) {
-   res.send({ resposta.error })
+   res.send(resposta.error)
    }
    })
    router.all('*', async (req, res) => {
