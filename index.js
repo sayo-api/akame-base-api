@@ -6,7 +6,7 @@ var secure = require('ssl-express-www')
 
 const PORT = process.env.PORT || 8080
 
-var mainrouter = require('./main')
+var mainrouter = require('./apis')
 
 var app = express()
 app.enable('trust proxy');

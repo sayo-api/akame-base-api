@@ -2,7 +2,7 @@
 //EXEMPLOS...
 //@SAYO
 
-__path = process.cwd()
+sayo = process.cwd()
 
 var express = require('express');
 var router = express.Router();
@@ -10,6 +10,51 @@ var { exec } = require('child_process')
 var fetch = require('node-fetch')
 var canvacord = require('canvacord').Canvas
 var fs = require('fs')
+
+var key = 'akameapikey' //apikey das apis
+
+resposta = { //MSG DE ERRO NO SERVIDOR
+    semkey: {
+        status: 
+        false,
+        criador: 
+        criador,
+        código: 
+        406,
+        mensagem: 
+        'Insira a apikey na url'
+    },
+    cdtxt: {
+        status: 
+        false,
+        criador: 
+        criador,
+        código: 
+        406,
+        mensagem: 
+        'insira o texto na url'
+    },
+    cdimg: {
+        status: 
+        false,
+        criador: 
+        criador,
+        código: 
+        406,
+        mensagem: 
+        'Insira a imagem na url'
+    },
+    error: {
+       status: 
+        false,
+        criador: 
+        criador,
+        mensagem: 
+        'ops :/ deu erro no servidor interno'
+    }
+}
+
+var keyinvalida = sayo + '/paginas/keysemresultado.html' // html key invalida
 
 async function getBuffer(url) {
   he = await fetch(url).then(c => c.buffer())
@@ -24,7 +69,10 @@ function getRandom(nans) {
    return he
 }
  router.all('/loli', async (req, res) => {
+   var cdapikey = req.query.apikey,
    try {
+   if(!cdapikey) return res.json(resposta.semkey)
+  	if(cdapikey !== key) return res.sendFile(keyinvalida)
    json = JSON.parse(fs.readFileSync('lib/lolis.json').toString())
    random = json[Math.floor(Math.random() * json.length)]
    res.type('png')
