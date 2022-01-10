@@ -145,6 +145,48 @@ criador: criador,
 akk})}).catch(e => {
 res.sendFile(error)})})
 
+ router.get('/download/ytmp4', async(req, res, next) => {
+ var cdapikey = req.query.apikey;
+ link = req.query.link          
+if(!cdapikey) return res.json(resposta.semkey)
+ if(cdapikey !== key) return res.sendFile(keyinvalida)
+ if (!link) return res.json({ status : false, criador : `criador`, mensagem : "Coloque o link"})
+ ytDonlodMp4(link).then((akk) => {
+res.json({
+status: true,
+código: 200,
+criador: criador,
+akk})}).catch(e => {
+res.sendFile(error)})})
+
+ router.get('/download/play', async(req, res, next) => {
+ var cdapikey = req.query.apikey;
+ nome = req.query.nome
+if(!cdapikey) return res.json(resposta.semkey)
+ if(cdapikey !== key) return res.sendFile(keyinvalida)
+ if (!nome) return res.json({ status : false, criador : `criador`, mensagem : "Coloque o nome"})
+ ytPlayMp3(nome).then((akk) => {
+res.json({
+status: true,
+código: 200,
+criador: criador,
+akk})}).catch(e => {
+res.sendFile(error)})})
+
+ router.get('/download/playv', async(req, res, next) => {
+ var cdapikey = req.query.apikey;
+ nome = req.query.nome
+if(!cdapikey) return res.json(resposta.semkey)
+ if(cdapikey !== key) return res.sendFile(keyinvalida)
+ if (!nome) return res.json({ status : false, criador : `criador`, mensagem : "Coloque o nome"})
+ ytPlayMp4(nome).then((akk) => {
+res.json({
+status: true,
+código: 200,
+criador: criador,
+akk})}).catch(e => {
+res.sendFile(error)})})
+
  router.all('/shota', async (req, res) => {
  var cdapikey = req.query.apikey;
    try {
