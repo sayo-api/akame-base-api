@@ -54,7 +54,7 @@ resposta = { //MSG DE ERRO NO SERVIDOR
     }
 }
 
-var keyinvalida = sayo + '/paginas/keysemresultado.html' // html key invalida
+var keyinvalida = sayo + '/paginas/keysemresultado.html' // html key de invalida
 
 async function getBuffer(url) {
   he = await fetch(url).then(c => c.buffer())
