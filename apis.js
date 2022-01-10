@@ -69,7 +69,7 @@ function getRandom(nans) {
    return he
 }
  router.all('/loli', async (req, res) => {
-   var cdapikey = req.query.apikey,
+   var cdapikey = req.query.apikey;
    try {
    if(!cdapikey) return res.json(resposta.semkey)
   	if(cdapikey !== key) return res.sendFile(keyinvalida)
