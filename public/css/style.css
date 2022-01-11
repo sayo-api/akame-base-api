@@ -11,9 +11,9 @@ html, body {
   height:100%;
 }
 body {
-    background: linear-gradient(-45deg, #ff03d9, #ff0000, #0307ff, #0307ff, #ff03d9, #ff0000); /*cores do gradiente*/
-    background-size: 400% 400%;
-    animation: gradient 1s ease infinite; /*gradiange o 1s é a velocidade*/
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
 }
 
 @keyframes gradient {
