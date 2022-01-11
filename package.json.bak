@@ -1,0 +1,35 @@
+{
+  "name": "api-akame",
+  "version": "1.1.0",
+  "description": "Nothing",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://git.heroku.com/base-api-akame.git"
+  },
+  "keywords": [
+    "simple",
+    "loli",
+    "rest",
+    "api"
+  ],
+  "author": "Breno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brenomakerr/akame-base-api"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1",
+    "morgan": "^1.10.0",
+    "ssl-express-www": "^3.0.7",
+    "canvacord": "^5.1.0",
+    "ytdl-core": "^4.4.5"
+  },
+  "homepage": "https://github.com/brenomakerr/akame-base-api"
+}

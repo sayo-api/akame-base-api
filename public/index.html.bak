@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><style lang="en" type="text/css" id="dark-mode-native-style"></style><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Akame Rest API</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="https://telegra.ph/file/692385eb5225c1be33900.jpg" type="image/jpg">
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1014.0" data-gr-ext-installed="">
+    <img id="userPhoto" src="https://telegra.ph/file/692385eb5225c1be33900.jpg" alt="Sayo: criador">
+    
+    <a href="https://api.whatsapp.com/send?phone=556181496039&text=Base%20de%20rest%20api" id="userName">@breno_</a>
+    <div id="links">
+        <a class="link" href="canvas/clyde?texto=Akame api&apikey=SUAKEY">Canvas Clyde</a>
+    </div>
+    <div id="links">
+        <a class="link" href="canvas/changemymind?texto=Akame api&apikey=SUAKEY">Canvas ChangeMyMind</a>
+    </div>
+    <div id="links">
+        <a class="link" href="canvas/trigger?url=https://telegra.ph/file/692385eb5225c1be33900.jpg&apikey=SUAKEY">Canvas Trigger</a>
+    </div>
+    <div id="links">
+        <a class="link" href="loli&apikey=SUAKEY">Loli</a>
+    </div>
+    <div id="links">
+        <a class="link" href="shota&apikey=SUAKEY">Shota</a>
+    </div>
+    <div id="links">
+        <a class="link" href="nsfwloli&apikey=SUAKEY">NSFW loli</a>
+    </div>
+    <div id="links">
+        <a class="link" href="nsfw/hentai&apikey=SUAKEY">Hentai</a>
+    </div>
+    <div id="links">
+     <a class="link" href="download/play?&nome=brocasito&apikey=SUAKEY">Play</a>
+    </div>
+    <div id="links">
+     <a class="link" href="download/playv?&nome=akame edit funk&apikey=SUAKEY">Play vídeo</a>
+    </div>    
+    <div id="links">
+     <a class="link" href="download/ytmp3?&link=https://youtu.be/VHrmaxHJOKw&apikey=SUAKEY">Ytmp3</a>
+    </div>
+    <div id="links">
+     <a class="link" href="download/ytmp4?&link=https://youtu.be/NSsn28a0u1U&apikey=SUAKEY">Ytmp4</a>
+    </div>        
+    <!-- Javascript -->
+    <script src="/script/jquery.min.js"></script>
+    <script src="/script/index.js"></script>
+
+</body></html>
