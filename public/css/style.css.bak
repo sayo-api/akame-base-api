@@ -1,4 +1,4 @@
-/* Style Settings */
+/* Cores do site *
 @import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
 :root {
     --bgColor: white;
