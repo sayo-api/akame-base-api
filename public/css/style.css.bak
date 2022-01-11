@@ -11,11 +11,10 @@ html, body {
   width: 100%;
   height:100%;
 }
-
 body {
     background: linear-gradient(-45deg, #1e05ff, #ff03e6, #8903ff, #fff703, #13ff03, #ff0303);
     background-size: 400% 400%;
-    animation: gradient 0s ease infinite;
+    animation: gradient 1s ease infinite;
 }
 
 @keyframes gradient {
@@ -29,10 +28,6 @@ body {
         background-position: 0% 50%;
     }
 }
-
-
-
-
 #userPhoto{
     width: 96px;
     height: 96px;
