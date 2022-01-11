@@ -13,7 +13,7 @@ html, body {
 body {
     background: linear-gradient(-45deg, #ff03d9, #ff0000, #0307ff, #0307ff, #ff03d9, #ff0000); /*cores do gradiente*/
     background-size: 400% 400%;
-    animation: gradient 1s ease infinite; /*gradiange o 1s é a velocidade*/
+    animation: blink 2s ease infinite; /*gradiange o 1s é a velocidade*/
 }
 
 @keyframes gradient {
