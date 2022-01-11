@@ -1,7 +1,7 @@
 /* Cores do site */
 @import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
 :root {
-    --bgColor: white;
+    --bgColor: red;
     --accentColor: #ff0000;
     --font: 'Karla', sans-serif;
     --fontColor: black;
@@ -11,7 +11,7 @@ html, body {
   height:100%;
 }
 body {
-    background: linear-gradient(-45deg, #ff03d9, #ff0000, #0307ff); /*cores do gradiente*/
+    background: linear-gradient(-45deg, #ff03d9, #ff0000, #0307ff, #0307ff, #ff03d9, #ff0000); /*cores do gradiente*/
     background-size: 400% 400%;
     animation: gradient 1s ease infinite; /*gradiange o 1s é a velocidade*/
 }
