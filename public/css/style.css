@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
 :root {
     --bgColor: white;
-    --accentColor: #00ffff;
+    --accentColor: #ff0000;
     --font: 'Karla', sans-serif;
     --fontColor: black;
 }
@@ -13,9 +13,9 @@ html, body {
 }
 
 body {
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab, #f8ff0d, #11FF0D);
+    background: linear-gradient(-45deg, #1e05ff, #ff03e6, #8903ff, #fff703, #13ff03, #ff0303);
     background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    animation: gradient 5s ease infinite;
 }
 
 @keyframes gradient {
