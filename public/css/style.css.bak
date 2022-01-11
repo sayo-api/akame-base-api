@@ -11,8 +11,8 @@ html, body {
   height:100%;
 }
 body {
-    background: linear-gradient(-45deg, #ff03d9, #ff0000, #0307ff, #0307ff, #ff03d9, #ff0000); /*cores do gradiente*/
-    background-size: auto, auto;
+    background: linear-gradient(-45deg, #ff03d9, #ff0000, #0307ff, #0307ff, #ff03d9, #ff0000),linear-gradient(#ff03d9, #ff0000, #0307ff, #ff03d9, #ff0000), linear-gradient(#ff0000 0%, #ff03d9 25%, #ff03d9 50%, #ff0000 75%, #ff03d9 100%);/*cores do gradiente*/
+    background-size: 400% 400%;
     animation: gradient 1s ease infinite; /*gradiange o 1s é a velocidade*/
 }
 
